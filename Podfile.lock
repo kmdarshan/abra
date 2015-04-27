@@ -1,0 +1,58 @@
+PODS:
+  - AFNetworking (2.5.3):
+    - AFNetworking/NSURLConnection (= 2.5.3)
+    - AFNetworking/NSURLSession (= 2.5.3)
+    - AFNetworking/Reachability (= 2.5.3)
+    - AFNetworking/Security (= 2.5.3)
+    - AFNetworking/Serialization (= 2.5.3)
+    - AFNetworking/UIKit (= 2.5.3)
+  - AFNetworking/NSURLConnection (2.5.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.3)
+  - AFNetworking/Security (2.5.3)
+  - AFNetworking/Serialization (2.5.3)
+  - AFNetworking/UIKit (2.5.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - JXHTTP (1.0.4)
+  - MBProgressHUD (0.9.1)
+  - MediaRSSParser (1.0.1):
+    - AFNetworking (~> 2.0)
+  - Spectacles (1.0.1)
+  - TMTumblrSDK (2.0.2):
+    - TMTumblrSDK/Activity (= 2.0.2)
+    - TMTumblrSDK/APIClient (= 2.0.2)
+    - TMTumblrSDK/AppClient (= 2.0.2)
+    - TMTumblrSDK/Core (= 2.0.2)
+  - TMTumblrSDK/Activity (2.0.2)
+  - TMTumblrSDK/APIClient (2.0.2):
+    - JXHTTP (~> 1.0)
+    - TMTumblrSDK/APIClient/Authentication (= 2.0.2)
+  - TMTumblrSDK/APIClient/Authentication (2.0.2):
+    - JXHTTP (~> 1.0)
+    - TMTumblrSDK/Core
+  - TMTumblrSDK/AppClient (2.0.2):
+    - TMTumblrSDK/Core
+  - TMTumblrSDK/Core (2.0.2):
+    - Spectacles (~> 1.0)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 0.8)
+  - MediaRSSParser (~> 1.0)
+  - TMTumblrSDK
+
+SPEC CHECKSUMS:
+  AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
+  JXHTTP: beb9c0a64ba3d4c576c4f76049d525f283bb24dd
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MediaRSSParser: 5d73c6a4278448b7f56fba73c97b5ffaf4ead72c
+  Spectacles: 8dc60711140320653724560e2d6bbb8a8f0940e4
+  TMTumblrSDK: 4f3e4a41789d9072d4611d270cbd1ca4c070548d
+
+COCOAPODS: 0.36.4

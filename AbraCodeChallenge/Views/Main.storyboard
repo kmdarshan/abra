@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dUR-nY-kz3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--Abra-->
+        <scene sceneID="j5y-2o-TU0">
+            <objects>
+                <tableViewController id="mn4-Ff-rBq" customClass="RRTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="22" sectionFooterHeight="22" id="Rx6-I2-j81">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RRBasicCell" rowHeight="110" id="UyK-Tm-X72" customClass="RRBasicCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UyK-Tm-X72" id="jGm-t0-1gv">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="k8A-BF-Bop">
+                                            <rect key="frame" x="25" y="0.0" width="156" height="91"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="FJ4-zJ-0Wo"/>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="dEx-Ww-vez"/>
+                                            </constraints>
+                                            <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                <rect key="frame" x="20" y="20" width="193" height="195"/>
+                                                <mask key="constraints">
+                                                    <exclude reference="FJ4-zJ-0Wo"/>
+                                                    <exclude reference="dEx-Ww-vez"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="captionLabel" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maG-Kt-tsF">
+                                            <rect key="frame" x="196" y="8" width="391" height="37"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="detailLabel" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yd7-Tl-zCQ">
+                                            <rect key="frame" x="196" y="63" width="396" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="k8A-BF-Bop" secondAttribute="bottom" constant="20" id="8Ib-Jq-Zk1"/>
+                                        <constraint firstItem="maG-Kt-tsF" firstAttribute="top" secondItem="jGm-t0-1gv" secondAttribute="top" constant="20" id="Iz2-LA-dlF"/>
+                                        <constraint firstItem="k8A-BF-Bop" firstAttribute="leading" secondItem="jGm-t0-1gv" secondAttribute="leading" constant="20" id="NMt-Gc-Qr6"/>
+                                        <constraint firstItem="k8A-BF-Bop" firstAttribute="top" secondItem="jGm-t0-1gv" secondAttribute="top" constant="20" id="QrF-u9-zco"/>
+                                        <constraint firstItem="yd7-Tl-zCQ" firstAttribute="leading" secondItem="k8A-BF-Bop" secondAttribute="trailing" constant="15" id="V2T-qf-Wnh"/>
+                                        <constraint firstAttribute="bottom" secondItem="yd7-Tl-zCQ" secondAttribute="bottom" constant="20" id="ceq-Cd-lE5"/>
+                                        <constraint firstItem="maG-Kt-tsF" firstAttribute="leading" secondItem="k8A-BF-Bop" secondAttribute="trailing" constant="15" id="ct5-8M-u7U"/>
+                                        <constraint firstItem="yd7-Tl-zCQ" firstAttribute="trailing" secondItem="jGm-t0-1gv" secondAttribute="trailing" constant="20" id="dI2-Bx-7VK">
+                                            <variation key="widthClass=compact" constant="0.0"/>
+                                        </constraint>
+                                        <constraint firstAttribute="trailing" secondItem="maG-Kt-tsF" secondAttribute="trailing" constant="20" id="gza-4J-ReM"/>
+                                        <constraint firstItem="yd7-Tl-zCQ" firstAttribute="top" secondItem="maG-Kt-tsF" secondAttribute="bottom" constant="5" id="nO1-pb-EBt"/>
+                                        <constraint firstItem="yd7-Tl-zCQ" firstAttribute="leading" secondItem="maG-Kt-tsF" secondAttribute="trailing" constant="-391" id="tpN-Xj-fIq"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="tpN-Xj-fIq"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="captionLabel" destination="maG-Kt-tsF" id="dWe-yo-tfH"/>
+                                    <outlet property="detailLabel" destination="yd7-Tl-zCQ" id="v7E-ra-2J3"/>
+                                    <outlet property="imageView" destination="k8A-BF-Bop" id="hIb-ZW-ENI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mn4-Ff-rBq" id="4qR-MT-wSm"/>
+                            <outlet property="delegate" destination="mn4-Ff-rBq" id="qkt-2d-Nn6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Abra" id="WLK-9u-swl">
+                        <barButtonItem key="rightBarButtonItem" title="Refresh" id="DZz-Oo-cMZ">
+                            <connections>
+                                <action selector="refreshData" destination="mn4-Ff-rBq" id="caM-Dd-Q2n"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWB-OZ-3PQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-957" y="529"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C8O-op-7W8">
+            <objects>
+                <navigationController id="dUR-nY-kz3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fOt-ZT-MAc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mn4-Ff-rBq" kind="relationship" relationship="rootViewController" id="Y00-wz-UMo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vI8-EA-z2s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1776" y="530"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo.png" width="146" height="79"/>
+    </resources>
+</document>
