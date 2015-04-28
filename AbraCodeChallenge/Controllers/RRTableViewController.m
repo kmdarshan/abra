@@ -8,6 +8,7 @@
 
 #import "RRTableViewController.h"
 #import <AFNetworking/UIKit+AFNetworking.h>
+#import "NSDate+Utils.h"
 static NSString * const RRBasicCellIdentifier = @"RRBasicCell";
 @interface RRTableViewController ()
 {
@@ -66,7 +67,7 @@ static NSString * const RRBasicCellIdentifier = @"RRBasicCell";
     if (subtitle.length > 200) {
         subtitle = [NSString stringWithFormat:@"%@...", [subtitle substringToIndex:200]];
     }
-    [cell.detailLabel setText:[NSString stringWithFormat:@"%@ %@",item.datePosted, subtitle]];
+    [cell.detailLabel setText:[NSString stringWithFormat:@"%@ %@ %@",(NSDate*)[item.datePosted longDateString], (NSDate*)[item.datePosted shortTimeString], subtitle]];
 }
 
 - (void)setImageForCell:(RRBasicCell *)cell item:(RRPost *)item {

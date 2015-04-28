@@ -9,7 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDate (Utils)
--(NSDate *) toLocalTime;
--(NSDate *) toGlobalTime;
+@property (nonatomic, readonly) NSString *longString;
+@property (nonatomic, readonly) NSString *longDateString;
+@property (nonatomic, readonly) NSString *longTimeString;
+@property (nonatomic, readonly) NSString *shortDateString;
+@property (nonatomic, readonly) NSString *shortTimeString;
+-(NSDate*) toLocalTime;
+-(NSDate*) toGlobalTime;
 -(NSDate*) toDateFromString:(NSString*)datePosted;
 @end

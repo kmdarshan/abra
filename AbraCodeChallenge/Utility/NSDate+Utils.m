@@ -31,4 +31,28 @@
     NSDate *gmtDate = [dateFormatter dateFromString:datePosted];
     return [gmtDate toLocalTime];
 }
+- (NSString *) stringWithDateStyle: (NSDateFormatterStyle) dateStyle timeStyle: (NSDateFormatterStyle) timeStyle {
+    NSDateFormatter *formatter = [NSDateFormatter new];
+    formatter.dateStyle = dateStyle;
+    formatter.timeStyle = timeStyle;
+    return [formatter stringFromDate:self];
+}
+- (NSString *) longString {
+    return [self stringWithDateStyle:NSDateFormatterLongStyle timeStyle:NSDateFormatterLongStyle ];
+}
+
+- (NSString *) longTimeString {
+    return [self stringWithDateStyle:NSDateFormatterNoStyle timeStyle:NSDateFormatterLongStyle ];
+}
+
+- (NSString *) longDateString {
+    return [self stringWithDateStyle:NSDateFormatterLongStyle  timeStyle:NSDateFormatterNoStyle];
+}
+- (NSString *) shortTimeString {
+    return [self stringWithDateStyle:NSDateFormatterNoStyle timeStyle:NSDateFormatterShortStyle];
+}
+
+- (NSString *) shortDateString {
+    return [self stringWithDateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterNoStyle];
+}
 @end
